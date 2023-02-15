@@ -1,0 +1,79 @@
+:root {
+  --bg_grey: hsl(212, 45%, 89%);
+  --dark_blue: hsl(218, 44%, 22%);
+  --greyish-blue: hsl(220, 15%, 55%);
+}
+
+body {
+  background-color: var(--bg_grey);
+  text-align: center;
+  font-family: "Outfit";
+    min-height: 100vh;
+
+}
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    min-height: 100vh;
+
+ 
+}
+.main {
+  width: 300px;
+  background-color: white;
+  border-radius: 25px;
+  padding: 20px;
+}
+img {
+  width: 100%;
+  border-radius: 15px;
+}
+.title {
+  color: var(--dark_blue);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.qr-desc {
+  color: var(--greyish-blue);
+  font-size: 1rem;
+  padding: 0 15px;
+  margin-top: 12px;
+}
+.attribution {
+  font-family: "Bahnschrift";
+  font-size: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.attribution a {
+  color: var(--dark_blue);
+}
+
+@media screen and (max-width:376px){
+
+  .main {
+    width: 280px;
+}
+
+.title {
+  color: var(--dark_blue);
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+
+}
+
+.qr-desc {
+  color: var(--greyish-blue);
+  font-size: 1rem;
+  padding: 0 11px;
+}
+.attribution {
+  font-family: "Bahnschrift";
+  font-size: 12px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+}
